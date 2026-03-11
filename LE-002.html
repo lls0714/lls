@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配手机端，扫码后全屏播放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>康复宣教视频</title>
+    <style>
+        /* 美化播放器，适配手机/平板 */
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        video {
+            width: 100%;
+            border-radius: 4px;
+        }
+        .title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .tips {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <div class="title">康复宣教视频 - LE-002</div>
+        <!-- 核心播放器：替换src为你的COS视频链接 -->
+        <video controls poster="" preload="metadata">
+            <source src="https://rehab-videos-ot-1342325641.cos.ap-guangzhou.myqcloud.com/LE-001.mp4" type="video/mp4">
+            <!-- 兼容提示：旧浏览器/设备无法播放时显示 -->
+            您的设备不支持视频播放，请使用微信/最新版浏览器打开，或联系医护人员。
+        </video>
+        <div class="tips">温馨提示：播放过程中可调节音量/进度</div>
+    </div>
+</body>
+</html>
